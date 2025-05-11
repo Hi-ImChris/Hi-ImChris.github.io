@@ -263,12 +263,14 @@ header {
 
 /* Contact Section Styles */
 .contact-container {
-    max-width: 600px;
+    max-width: 800px;  /* Increased from 600px */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;     /* Increased from 2rem */
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;        /* Added to ensure consistent width */
+    box-sizing: border-box; /* Added to include padding in width calculation */
 }
 
 .form-group {
@@ -320,8 +322,9 @@ header {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .contact-container {
-        padding: 1rem;
-        margin: 0 1rem;
+        padding: 2rem;
+        width: 95%;
+        margin: 0 auto;
     }
 }
 
