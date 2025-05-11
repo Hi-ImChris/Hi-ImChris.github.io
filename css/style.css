@@ -271,11 +271,42 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 90%;        /* Added to ensure consistent width */
     box-sizing: border-box; /* Added to include padding in width calculation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-group {
     margin-bottom: 1.5rem;
+    width: 80%;    /* Reduced from 100% to create margins */
+}
+
+#contactForm {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-btn {
+    width: 80%;    /* Match the width of form inputs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .form-group {
+        width: 90%;    /* Slightly wider on mobile */
+    }
+    
+    .submit-btn {
+        width: 90%;    /* Match form-group width */
+    }
 }
 
 .form-group label {
